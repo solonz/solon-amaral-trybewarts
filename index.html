@@ -25,14 +25,14 @@
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
         
         <form id="evaluation-form" action="" method="get">
-            <h1>Formulário de Avaliação</h1>
+            <h2>Formulário de Avaliação</h2>
             
-            <div class="sub-container">
+            <section class="sub-container">
                 <input type="text" name="name" placeholder="Nome" id="input-name">
                 <input type="text" name="lastname" placeholder="Sobrenome" id="input-lastname">
-            </div>
+            </section>
             
-            <div class="sub-container">
+            <section class="sub-container">
                 <input type="email" name="email" placeholder="Email" id="input-email">
                 <label for="house">Casa:</label>
                     <select id="house">
@@ -41,7 +41,24 @@
                         <option value="Corvinode" id="corvinode-house">Corvinode</option>
                         <option value="Pytherina" id="pytherina-house">Pytherina</option>
                     </select>
-            </div>
+            </section>
+
+            <section>
+                <h4 id="label-family">Qual sua família?</h4>
+                <div>
+                    <input id="front" type="radio" name="family" value="Frontend">
+                    <label for="front">Família Frontend</label>
+                </div>
+                <div>
+                    <input id="back" type="radio" name="family" value="Backend">
+                    <label for="back">Família Backend</label>
+                </div>
+                <div>
+                    <input id="full" type="radio" name="family" value="FullStack">
+                    <label for="full">Família FullStack</label>
+                </div>
+            </section>
+
         </form>
 
     </main>
