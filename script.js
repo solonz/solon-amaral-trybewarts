@@ -14,3 +14,26 @@ function login() {
 }
 
 login();
+
+// Requisito 18
+
+// Fontes:
+// https://stackoverflow.com/questions/11719961/javascript-remove-disabled-attribute-from-html-input
+// https://www.codegrepper.com/code-examples/javascript/add+attribute+to+button+element+in+javascript
+
+// Eu não entendi porque precisamos usar uma aspas vazia pra fazer o setAttribute disabled funcionar
+
+function validarTermos() {
+  const btnEnviar = document.getElementById('submit-btn')
+  const agreement = document.getElementById('agreement')
+
+  agreement.addEventListener('click', () => {
+    if (document.getElementById('agreement').checked === true) {
+      btnEnviar.removeAttribute('disabled');
+    } else {
+      btnEnviar.setAttribute('disabled', '');
+    }
+  });
+}
+validarTermos();
+
