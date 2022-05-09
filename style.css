@@ -31,12 +31,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px rgb(128, 0, 98) solid;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  border: 1px green solid;
   order: 1;
 }
 
@@ -51,4 +49,13 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  background-color: gray;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
