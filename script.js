@@ -24,8 +24,8 @@ login();
 // Eu não entendi porque precisamos usar uma aspas vazia pra fazer o setAttribute disabled funcionar
 
 function validarTermos() {
-  const btnEnviar = document.getElementById('submit-btn')
-  const agreement = document.getElementById('agreement')
+  const btnEnviar = document.getElementById('submit-btn');
+  const agreement = document.getElementById('agreement');
 
   agreement.addEventListener('click', () => {
     if (document.getElementById('agreement').checked === true) {
@@ -36,4 +36,3 @@ function validarTermos() {
   });
 }
 validarTermos();
-
